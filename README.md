@@ -53,7 +53,7 @@ public class Pratikum {
                         } else {
                             System.out.print("Berapa banyak film yang ingin ditambahkan (maks " + sisaSlot + ")? ");
                             int jumlah = scanner.nextInt();
-                            scanner.nextLine(); // buang newline
+                            scanner.nextLine();
 
                             if (jumlah <= 0 || jumlah > sisaSlot) {
                                 System.out.println("Jumlah tidak valid. Maksimal: " + sisaSlot);
@@ -63,10 +63,10 @@ public class Pratikum {
                                     String filmBaru = scanner.nextLine();
                                     if (!filmBaru.isBlank()) {
                                         daftarFilm.add(filmBaru);
-                                        System.out.println("✔ Film '" + filmBaru + "' ditambahkan.");
+                                        System.out.println("Film '" + filmBaru + "' ditambahkan.");
                                     } else {
-                                        System.out.println("❌ Judul kosong, film tidak ditambahkan.");
-                                        i--; // ulangi input
+                                        System.out.println("Judul kosong, film tidak ditambahkan.");
+                                        i--;
                                     }
                                 }
                             }
